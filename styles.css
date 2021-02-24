@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: rgb(220, 236, 236);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+img {
+  border-radius: 6px;
+}
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 4px 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1.2em;
+}
