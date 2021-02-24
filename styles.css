@@ -1,8 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: rgb(220, 236, 236);
+  background: #F9FAFB;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
 }
 
 * { box-sizing: border-box; }
@@ -14,10 +15,14 @@ img {
 h1, h2, h3 {
   padding: 0;
   margin: 4px 0;
+  color: #1F2937;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.2em;
+  border: solid 2px #3B82F6;
+  padding: 2px 4px;
+  max-width: max-content;
 }
 
 h2 {
@@ -28,6 +33,62 @@ h3 {
   font-size: 1em;
 }
 
+a {
+  text-decoration: none;
+  transition: all ease .2s;
+}
+
+a:hover {
+  color: #3B82F6;
+}
+
+a, p {
+  color: #374151
+}
+
 p {
   font-size: 1.2em;
+}
+
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 16px;
+  font-size: 1.5em;
+}
+
+footer {
+  width: 100vw;
+  text-align: center;
+  margin-top: 32px;
+  padding: 8px;
+}
+
+footer p {
+  font-size: .9em;
+  color: #4B5563;
+}
+
+.container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.home-card {
+  margin: 8px;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background: #FFF;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
