@@ -54,8 +54,15 @@ p {
 
 nav {
   display: flex;
-  padding: 8px 32px;
+  padding: 0 32px;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
+  position: fixed;
+  min-height: 72px;
+  z-index: 10;
+  background: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 nav ul {
@@ -84,37 +91,52 @@ footer p {
 
 .container {
   width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 72px;
 }
 
 .home-card {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 400px;
   justify-content: space-between;
-  margin: 16px;
-  border-radius: 6px;
-  padding: 24px 16px;
-  background: #FFF;
-  cursor: pointer;
+  padding: 32px;
+  margin-top: 64px;
+  border-radius: 4px;
 }
 
-.home-card:hover {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+#giza-card {
+  background: #FEE2E2;
+}
+
+#nyc-card {
+  background: #DBEAFE;
+}
+
+#rochester-card {
+  background: #EDE9FE;
+}
+
+#sf-card {
+  background: #FEF3C7;
 }
 
 .home-card img {
-  max-width: 200px;
+  width: 40%;
 }
 
 .home-card p {
-  padding: 8px;
+  padding: 8px 0;
   max-width: 70%;
   font-size: 1.3em;
 }
 
 .home-card--left {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 8px;
 }
