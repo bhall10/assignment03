@@ -12,6 +12,24 @@ img {
   border-radius: 6px;
 }
 
+img.img-left {
+  float: left;
+  max-width: 50%;
+  margin: 16px 16px 16px 0;
+}
+
+img.img-right {
+  float: right;
+  max-width: 50%;
+  margin: 16px 0 16px 16px;
+}
+
+img.img-center {
+  float: none;
+  max-width: 100%;
+  margin: 16px 0 16px 0;
+}
+
 h1, h2, h3 {
   padding: 0;
   margin: 4px 0;
@@ -27,6 +45,7 @@ h1 {
 
 h2 {
   font-size: 1.8em;
+  margin-top: 24px;
 }
 
 h3 {
@@ -49,8 +68,14 @@ a, p {
 p {
   font-size: 1.2em;
   line-height: 1.5;
-  margin: 0;
+  margin: 16px 0;
+  text-indent: 36px;
 }
+
+/* p::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+} */
 
 nav {
   display: flex;
