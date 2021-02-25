@@ -6,6 +6,13 @@
   --font-size--xl: 3.6rem; /* 24px */
 }
 
+::selection {
+  background: yellow; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: yellow; /* Gecko Browsers */
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -133,44 +140,103 @@ footer p {
   padding: 112px 16px 0 16px;
 }
 
+.container.home {
+  max-width: 1100px;
+}
+
 .home-card {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1000px;
   min-height: 400px;
-  padding: 32px;
-  margin-bottom: 48px;
-  border-radius: 4px;
-}
-
-#giza-card {
-  background: #FEE2E2;
-}
-
-#nyc-card {
-  background: #DBEAFE;
-}
-
-#rochester-card {
-  background: #EDE9FE;
-}
-
-#sf-card {
-  background: #FEF3C7;
-}
-
-.home-card img {
-  width: 40%;
+  padding: 32px 8%;
+  margin-bottom: 36px;
 }
 
 .home-card p {
   padding: 8px 0;
-  max-width: 70%;
+  font-size: 20px;
 }
 
 .home-card--left {
   display: flex;
   flex-direction: column;
   padding: 8px;
+  width: 60%;
+}
+
+.home-card--right {
+  display: flex;
+  padding: 8px;
+  width: 40%;
+}
+
+.home-card--img {
+  display: flex;
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;         /* Generic*/
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.home-card a {
+  max-width: max-content;
+  max-height: max-content;
+}
+
+.home-card a:hover {
+  text-decoration: none;
+}
+
+.home-card--link {
+  transition: background ease .3s;
+  transition: color ease .3s;
+}
+
+.home-card--link:hover {
+  background: #3B82F6;
+  color: white;
+}
+
+.home-card--img.giza {
+  background: url('../images/giza/city.jpg') no-repeat center center;
+}
+
+.home-card--img.nyc {
+  background: url('../images/nyc/pic1.png') no-repeat center center;
+}
+
+.home-card--img.rochester {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/e/e9/Downtown_Rochester%2C_NY_HDR_by_patrickashley.jpg') no-repeat center center;
+}
+
+.home-card--img.sf {
+  background: url('../images/sf/sf_skyscraper.jpg') no-repeat center center;
+}
+
+#giza-card {
+  background: rgb(66,159,224);
+  background: linear-gradient(90deg, rgb(110, 181, 231) 0%, rgb(92, 221, 180)100%);
+}
+
+#nyc-card {
+  background: #d9a7c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#rochester-card {
+  background: #ff9966;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#sf-card {
+  background: #FC466B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
