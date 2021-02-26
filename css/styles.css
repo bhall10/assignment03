@@ -114,6 +114,10 @@ nav ul {
   padding: 0;
 }
 
+ul li {
+  font-size: var(--font-size--default);
+}
+
 .nav-link {
   margin: 16px;
   font-size: 20px;
