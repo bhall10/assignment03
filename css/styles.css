@@ -54,8 +54,9 @@ h1, h2, h3 {
 
 h1 {
   font-size: var(--font-size--xl);
-  border: solid 2px #3B82F6;
-  padding: 2px 4px;
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
 }
 
 h2 {
@@ -195,10 +196,15 @@ footer p {
 .home-card--link {
   transition: background ease .3s;
   transition: color ease .3s;
+  font-size: var(--font-size--xl);
+  border: solid 2px #333;
+  padding: 2px 4px;
+  background: none;
+  color: #1F2937;
 }
 
 .home-card--link:hover {
-  background: #3B82F6;
+  background: #333;
   color: white;
 }
 
